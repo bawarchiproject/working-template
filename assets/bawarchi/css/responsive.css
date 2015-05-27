@@ -1,0 +1,461 @@
+/* =========================================================================
+    DEPENDENCIES
+    ----------------------------------------------------------------------
+    _colors.scss
+    _mixins.scss
+
+    TABLE OF CONTENT
+    ----------------------------------------------------------------------
+    01 767px and below (Iphone)
+    02 768px and below (Ipad Mini and phone)
+    03 1024px and above (Desktop)
+    04 Print
+========================================================================== */
+/* =======================================================================
+01 767px and below (Iphone)
+========================================================================== */
+@media screen and (max-width: 767px) {
+  /* ==========================================================================
+  DEPENDENCIES
+  	--------------------------------------------------------------------------
+  	_color.scss
+  	_mixin.scss
+  	_common.scss
+  
+  
+  	TABLE OF CONTENT
+  	--------------------------------------------------------------------------
+  	01 Global
+  	02 Layout
+  	03 Header
+  	04 Main Navigation
+  	05 Home Page
+  	06 Standard
+  	07 Footer
+  	08 Components
+  
+  	00 Imports
+  ================================================== */
+  /* =======================================================================
+  01 Global
+  ========================================================================== */
+  /* =======================================================================
+  02 Layout
+  ========================================================================== */
+  /* =======================================================================
+  03 Header
+  ========================================================================== */
+  #primary-nav .logo img {
+    width: 90%;
+    margin: 0 0px 0px 5px; }
+  #primary-nav h1 {
+    padding: 0;
+    margin-top: 3px;
+    margin-left: 10px; }
+
+  .login-container {
+    display: none; }
+
+  /* =======================================================================
+  04 Main Navigation
+  ========================================================================== */
+  /* =======================================================================
+  05 Homepage
+  ========================================================================== */
+  /* =======================================================================
+  06 Standard
+  ========================================================================== */
+  .standard-banner {
+    height: 150px; }
+
+  /* =======================================================================
+  07 Footer
+  ========================================================================== */
+  /* =======================================================================
+  08 Components
+  ========================================================================== */
+  #primary-nav {
+    transition-property: height;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    /* Safari */
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+    height: 55px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 20; }
+    #primary-nav.active {
+      height: 100%; }
+    #primary-nav > .nav {
+      padding: 0 !important; }
+    #primary-nav h1 {
+      font-size: 2.8em;
+      position: absolute;
+      top: 8px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 130px; }
+    #primary-nav ul {
+      overflow: hidden; }
+      #primary-nav ul > li {
+        opacity: 0;
+        top: -20px; }
+    #primary-nav .container {
+      padding: 0 !important; }
+    #primary-nav .wrap {
+      -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      background: #ffffff;
+      height: 55px;
+      left: 0;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10; }
+    #primary-nav .menu {
+      background: none;
+      border: 0;
+      float: right;
+      height: 55px;
+      padding: 8px;
+      width: 45px; }
+      #primary-nav .menu .line {
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        /* Safari */
+        -webkit-backface-visibility: hidden;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease-in-out;
+        background: #bd292d;
+        display: block;
+        height: 3px;
+        margin: 4px auto;
+        position: relative;
+        top: 0;
+        width: 17px; }
+    #primary-nav .lvl1 {
+      clear: both;
+      float: none;
+      display: none;
+      list-style: none;
+      margin: 55px 0 0 !important;
+      padding: 0;
+      position: relative; }
+      #primary-nav .lvl1 li {
+        border-top: 1px solid #bd292d;
+        float: none;
+        overflow: hidden;
+        position: relative; }
+      #primary-nav .lvl1 a {
+        padding: 12px 20px; }
+        #primary-nav .lvl1 a.active {
+          background: #f44336; }
+    #primary-nav .container {
+      float: none;
+      padding: 45px 10px 0; }
+    #primary-nav .sub-nav {
+      background: none;
+      border: 0;
+      color: #ffffff;
+      display: block;
+      height: 48px;
+      padding: 24px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 5; }
+    #primary-nav .icon-arrow:before, #primary-nav .icon-arrow:after {
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      /* Safari */
+      -webkit-backface-visibility: hidden;
+      -webkit-transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in-out;
+      background: #ffffff;
+      content: "";
+      display: block;
+      height: 8px;
+      position: absolute;
+      margin: auto;
+      top: 20px;
+      width: 2px; }
+    #primary-nav .icon-arrow:before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transfor-origin: 1px 0px;
+      -ms-transfor-origin: 1px 0px;
+      transfor-origin: 1px 0px;
+      left: 21px; }
+    #primary-nav .icon-arrow:after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transfor-origin: 1px 0px;
+      -ms-transfor-origin: 1px 0px;
+      transfor-origin: 1px 0px;
+      right: 21px; }
+    #primary-nav .icon-arrow.active:before {
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      -webkit-transfor-origin: 1px 0px;
+      -ms-transfor-origin: 1px 0px;
+      transfor-origin: 1px 0px; }
+    #primary-nav .icon-arrow.active:after {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+      -webkit-transfor-origin: 1px 0px;
+      -ms-transfor-origin: 1px 0px;
+      transfor-origin: 1px 0px; }
+    #primary-nav .lvl2,
+    #primary-nav .lvl3 {
+      display: none;
+      float: none;
+      margin: 0; }
+      #primary-nav .lvl2 a,
+      #primary-nav .lvl3 a {
+        border-bottom: 0; }
+    #primary-nav .lvl2 a {
+      padding: 12px 20px 12px 40px; }
+    #primary-nav .lvl3 a {
+      padding: 12px 20px 12px 60px; } }
+/* =======================================================================
+02 768px and below (Ipad Mini and phone)
+========================================================================== */
+@media screen and (min-width: 768px), print {
+  /* ==========================================================================
+  DEPENDENCIES
+  	--------------------------------------------------------------------------
+  	_color.scss
+  	_mixin.scss
+  	_common.scss
+  	_customBootstrap.scss
+  
+  	TABLE OF CONTENT
+  	--------------------------------------------------------------------------
+  	01 Global
+  	02 Layout
+  	03 Header
+  	04 Main Navigation
+  	05 Home Page
+  	06 Standard
+  	07 Footer
+  	08 Components
+  
+  00 Imports
+  ================================================== */
+  /* =======================================================================
+  01 Global
+  ========================================================================== */
+  .desktop-only {
+    display: none !important; }
+
+  .tablet-only {
+    display: block !important; }
+
+  .mobile-only {
+    display: none !important; }
+
+  .col-1 {
+    width: 8.33333%; }
+
+  .col-2 {
+    width: 16.66667%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33333%; }
+
+  .col-5 {
+    width: 41.66667%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33333%; }
+
+  .col-8 {
+    width: 66.66667%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33333%; }
+
+  .col-11 {
+    width: 91.66667%; }
+
+  .col-12 {
+    width: 100%; }
+
+  [class^="col-"],
+  [class*=" col-"] {
+    float: left; }
+
+  img {
+    margin: 0 0 10px;
+    width: auto; }
+
+  /* =======================================================================
+  02 Layout
+  ========================================================================== */
+  /* =======================================================================
+  03 Header
+  ========================================================================== */
+  /* =======================================================================
+  04 Main Navigation
+  ========================================================================== */
+  /* =======================================================================
+  05 Homepage
+  ========================================================================== */
+  /* =======================================================================
+  06 Standard
+  ========================================================================== */
+  /* =======================================================================
+  07 Footer
+  ========================================================================== */
+  /* =======================================================================
+  08 Components
+  ========================================================================== */
+  #primary-nav {
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+    #primary-nav > .nav {
+      padding: 0 !important; }
+    #primary-nav h1 {
+      margin-left: 15px; }
+    #primary-nav button,
+    #primary-nav .sub-nav,
+    #primary-nav .lvl2,
+    #primary-nav .lvl3 {
+      display: none; }
+    #primary-nav .lvl2 {
+      float: none;
+      position: absolute;
+      right: 0;
+      z-index: 1; }
+      #primary-nav .lvl2 li {
+        float: none; }
+    #primary-nav .lvl3 {
+      width: 100%; }
+      #primary-nav .lvl3 li a {
+        padding-left: 20px; } }
+/* ======================================================================
+03 1024px and above (Desktop)
+========================================================================== */
+@media screen and (min-width: 1024px), print {
+  /* ==========================================================================
+  DEPENDENCIES
+  	--------------------------------------------------------------------------
+  	_color.scss
+  	_mixin.scss
+  	_common.scss
+  
+  
+  	TABLE OF CONTENT
+  	--------------------------------------------------------------------------
+  	01 Global
+  	02 Layout
+  	03 Header
+  	04 Main Navigation
+  	05 Home Page
+  	06 Standard
+  	07 Footer
+  	08 Components
+  
+  	00 Imports
+  ================================================== */
+  /* =======================================================================
+  01 Global
+  ========================================================================== */
+  [class^="col-"], [class*=" col-"] {
+    margin-bottom: 0; }
+
+  /* =======================================================================
+  02 Layout
+  ========================================================================== */
+  .desktop-only {
+    display: block !important; }
+
+  .tablet-only {
+    display: none !important; }
+
+  .mobile-only {
+    display: none !important; }
+
+  /* =======================================================================
+  03 Header
+  ========================================================================== */
+  header .top-nav ul {
+    padding-right: 0; }
+
+  .nav-container {
+    height: 80px; }
+
+  .logo {
+    margin-top: 10px; }
+
+  #primary-nav ul li {
+    font-size: 1.4em; }
+  #primary-nav h1 {
+    margin: 0;
+    font-size: 2.8em; }
+
+  .lvl1 {
+    margin-top: 19px; }
+
+  /* =======================================================================
+  04 Main Navigation
+  ========================================================================== */
+  /* =======================================================================
+  05 Homepage
+  ========================================================================== */
+  /* =======================================================================
+  06 Standard
+  ========================================================================== */
+  .container-fluid {
+    padding: 20px 0; }
+
+  /* =======================================================================
+  07 Footer
+  ========================================================================== */
+  footer {
+    padding: 30px 0 0; }
+
+  .f-block {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding-right: 30px; }
+    .f-block h3 {
+      margin-top: 0;
+      font-size: 1.8em; }
+    .f-block p {
+      font-size: 1.4em; }
+
+  /* =======================================================================
+  08 Components
+  ========================================================================== */
+  #primary-nav h1 {
+    margin-left: 0; } }
+
+/*# sourceMappingURL=responsive.css.map */
